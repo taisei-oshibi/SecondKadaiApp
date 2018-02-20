@@ -18,39 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="    名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSm-Aw-E2h">
-                                <rect key="frame" x="75" y="70" width="225" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L43-qj-eoW">
-                                <rect key="frame" x="139" y="95.5" width="97" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-FN-5jl">
-                                <rect key="frame" x="172" y="155" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-FN-5jl">
+                                <rect key="frame" x="172" y="157" width="31" height="30"/>
                                 <state key="normal" title="決定"/>
                                 <connections>
                                     <segue destination="iuR-WF-wNv" kind="show" id="jbM-TB-s5b"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L43-qj-eoW">
+                                <rect key="frame" x="139" y="95" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSm-Aw-E2h">
+                                <rect key="frame" x="75" y="55" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="L43-qj-eoW" firstAttribute="top" secondItem="lSm-Aw-E2h" secondAttribute="bottom" constant="5" id="2i2-Xs-uRp"/>
-                            <constraint firstItem="lSm-Aw-E2h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2zF-Ii-zrl"/>
-                            <constraint firstItem="lSm-Aw-E2h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="8Jw-fB-S7t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lSm-Aw-E2h" secondAttribute="trailing" constant="75" id="KOB-Lh-41T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OKL-FN-5jl" secondAttribute="bottom" constant="480" id="Qvm-c5-Hva"/>
                             <constraint firstItem="OKL-FN-5jl" firstAttribute="top" secondItem="L43-qj-eoW" secondAttribute="bottom" constant="32" id="Z8Q-02-722"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L43-qj-eoW" secondAttribute="trailing" constant="139" id="bb5-B4-6sk"/>
                             <constraint firstItem="L43-qj-eoW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="cvm-fP-Y53"/>
-                            <constraint firstItem="L43-qj-eoW" firstAttribute="top" secondItem="lSm-Aw-E2h" secondAttribute="bottom" constant="5" id="eLa-Kn-n05"/>
+                            <constraint firstItem="lSm-Aw-E2h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="f2v-Xf-1yH"/>
                             <constraint firstItem="OKL-FN-5jl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="kmf-uy-KDN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OKL-FN-5jl" secondAttribute="bottom" constant="480" id="ogu-tE-dNK"/>
+                            <constraint firstItem="lSm-Aw-E2h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="sUL-C1-6SK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OKL-FN-5jl" secondAttribute="trailing" constant="172" id="x9q-o9-d8t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lSm-Aw-E2h" secondAttribute="trailing" constant="75" id="xcS-GD-zmK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -104,7 +103,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f90-0B-8QP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="vrO-E9-KuK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="752.79999999999995" y="28.335832083958024"/>
+            <point key="canvasLocation" x="493" y="29"/>
         </scene>
     </scenes>
 </document>
